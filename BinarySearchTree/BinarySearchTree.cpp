@@ -63,7 +63,17 @@ public:
 		// This function searches the currentNodeof the specified Node as well as the current Node of its parent
 		currentNode = ROOT;
 		parent = NULL;
-		
+		while ((currentNode != NULL) && (currentNode->info != element))
+		{
+			parent = currentNode;
+			if (element < currentNode->info)
+				currentNode = currentNode->leftchild;
+			else
+				currentNode = currentNode->rightchild;
+		}
+	}
+
+	
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
