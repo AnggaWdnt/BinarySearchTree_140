@@ -90,7 +90,12 @@ public:
 
 	void preorder(Node* ptr)
 	{
-
+		if (ROOT == NULL)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
+		
 	
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
