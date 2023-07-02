@@ -21,6 +21,16 @@ public:
 		}
 };
 
+class BinaryTree
+{
+public:
+	Node* ROOT;
+
+	BinaryTree()
+	{
+		ROOT = NULL; // Inializing ROOT to null
+	}
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
