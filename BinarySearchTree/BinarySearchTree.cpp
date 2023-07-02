@@ -80,6 +80,14 @@ public:
 			cout << "Tree is empty" << endl;
 			return;
 		}
+		if (ptr != NULL)
+		{
+			inorder(ptr->leftchild);
+			cout << ptr->info << " ";
+			inorder(ptr->rightchild);
+		}
+	}
+
 	
 	
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
