@@ -58,7 +58,12 @@ public:
 		}
 	}
 
-	
+	void search(string element, Node*& parent, Node*& currentNode)
+	{
+		// This function searches the currentNodeof the specified Node as well as the current Node of its parent
+		currentNode = ROOT;
+		parent = NULL;
+		
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
