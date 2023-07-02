@@ -111,7 +111,16 @@ public:
 			cout << "Tree is empty" << endl;
 			return;
 		}
-	
+		if (ptr != NULL)
+		{
+			postorder(ptr->leftchild);
+			postorder(ptr->rightchild);
+			cout << ptr->info << " ";
+		}
+	}
+};
+
+
 	
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
