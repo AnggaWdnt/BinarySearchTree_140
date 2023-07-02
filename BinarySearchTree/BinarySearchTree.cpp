@@ -75,6 +75,11 @@ public:
 
 	void inorder(Node* ptr)
 	{
+		if (ROOT == NULL)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
 	
 	
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
